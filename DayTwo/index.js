@@ -38,19 +38,13 @@ console.log(testingChanges(30)) // Should log out 20
 console.log(testingChanges(3)) // Should log out 2
 console.log(testingChanges(10)) // Should log out 0
 console.log('-------------------------------------------------------------------------------')
-
-// Let's look at a more advanced example:
-let testValue = 'Initial test value'
-
-function changeTestValue(newValue) {
-  testValue = newValue
-  return
-}
-
-console.log(testValue) // What does this log out?
-// Let's call the changeTestValue function now
-changeTestValue('A new value hahaha!')
-console.log(testValue) // What does this log out?
+console.log('-------------------------------------------------------------------------------')
+console.log('-------------------------------------------------------------------------------')
+console.log('-------------------------------------------------------------------------------')
+// console.log(testValue) // What does this log out?
+// // Let's call the changeTestValue function now
+// changeTestValue('A new value hahaha!')
+// console.log(testValue) // What does this log out?
 
 // At this point, you should understand mutable variable changes
 // When to use const - when you know the value of the variable should NEVER change
@@ -58,6 +52,42 @@ console.log(testValue) // What does this log out?
 
 // EXERCISE
 // Step 1. Define a mutable variable named "testNumber" and assign it with a value of 10.
-// Step 2. assign the "testNumber" with a new value 300
+// Step 2. Re-assign the "testNumber" with a new value 300
 // Step 3. console log out "testNumber". What do you see?
 // Write code below...I leave it up to you to figure out how to console log out the result (see previous examples). Hint: Nothing about this says you have to write a function
+
+console.log('exercise below!!!!!!!!!!')
+let testNumber = 10
+testNumber = 300
+
+console.log(testNumber)
+testNumber = 10000
+testNumber = 123131
+console.log(testNumber)
+testNumber = 47000
+console.log(testNumber)
+
+const lessonReview = 'finished'
+console.log(lessonReview)
+
+console.log("Lewis' first ever independently written function below!!! Congrats")
+// Write a function that takes ONE parameter, and do the following:
+// 1. If the parameter is equal to 'wow', return 'WOW!'
+// 2. If the parameter is greater than 50, return 'BIG NUMBER!'
+// 3. If it doesn't meet any of the conditions above, return 'Enter a better value please'
+
+function oneParameter(aNumber) {
+  let newNumber = aNumber
+  if (aNumber === 'wow!') {
+    newNumber = 'WOW!'
+  } else if (aNumber > 50) {
+    newNumber = 'BIG NUMBER!'
+  } else {
+    newNumber = 'Enter a better value please'
+  }
+  return newNumber
+}
+
+console.log(oneParameter('wow!'))
+console.log(oneParameter(87))
+console.log(oneParameter(43))

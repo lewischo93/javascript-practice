@@ -28,36 +28,72 @@ Entering in bad method resulted in the response Please enter a proper calculatio
 */
 
 // Add your code below...
-function calculateTwoNumbers() {
+function calculatesWithProcess(numberOne, numberTwo, process) { // 5, 3, 'blah blah'
+    console.log('value of numberOne is: ' + numberOne)
+    console.log('value of numberTwo is: ' + numberTwo)
+    console.log('value of process is: ' + process)
+    if (process === 'add') {
+        console.log('Is adding!')
+        return numberOne + numberTwo
+    } else if (process === 'subtract') {
+        console.log('Is Subtracting!')
+        return numberOne - numberTwo
+    } else if (process === 'multiply') {
+        console.log('Is multiplying!')
+        return numberOne * numberTwo
+    } else if (process === 'divide'){
+        console.log('Is dividing!')
+        return numberOne / numberTwo
+    } else {
+        console.log('Is all other cases!')
+        return "Please enter a proper calculation method"
+    }
 }
 
-// Do not touch code below...
-const actualAdd = calculateTwoNumbers(8, 2, 'add')
-const expectedAdd = 10
-const addAnswer = actualAdd === expectedAdd
-console.log(`Adding two numbers resulted in ${expectedAdd}: ${addAnswer}`)
-console.log('------------------------------------------------------------------------------')
+// calculatesWithProcess(2,5,'add')
 
-const actualSubtract = calculateTwoNumbers(8, 2, 'subtract')
-const expectedSubtract = 6
-const subtractAnswer = actualSubtract === expectedSubtract
-console.log(`Subtracting two numbers resulted in ${expectedSubtract}: ${subtractAnswer}`)
-console.log('------------------------------------------------------------------------------')
 
-const actualMultiply = calculateTwoNumbers(8, 2, 'multiply')
-const expectedMultiply = 16
-const multiplyAnswer = actualMultiply === expectedMultiply
-console.log(`Multiplying two numbers resulted in ${expectedMultiply}: ${multiplyAnswer}`)
-console.log('------------------------------------------------------------------------------')
 
-const actualDivide = calculateTwoNumbers(8, 2, 'divide')
-const expectedDivide = 4
-const divideAnswer = actualDivide === expectedDivide
-console.log(`Dividing two numbers resulted in ${expectedDivide}: ${divideAnswer}`)
-console.log('------------------------------------------------------------------------------')
+// calculateTwoNumbers(5, 3, 'divide');
+// calculateTwoNumbers(5, 3, 'add');
+// calculateTwoNumbers(5, 3, 'multiply');
+// calculateTwoNumbers(5, 3, 'addd');
+// calculateTwoNumbers(5, 3, 'Add');
 
-const actualBadMethod = calculateTwoNumbers(8, 2, 'randomMethod')
-const expectedBadMethod = 'Please enter a proper calculation method'
-const badMethodAnswer = actualBadMethod === expectedBadMethod
-console.log(`Entering in bad method resulted in the response ${expectedBadMethod}: ${badMethodAnswer}`)
-console.log('------------------------------------------------------------------------------')
+
+
+// // Do not touch code below...
+// const actualAdd = calculateTwoNumbers(8, 2, 'add')
+// const expectedAdd = 10
+// const addAnswer = actualAdd === expectedAdd
+// console.log(`Adding two numbers resulted in ${expectedAdd}: ${addAnswer}`)
+// console.log('------------------------------------------------------------------------------')
+
+// const actualSubtract = calculateTwoNumbers(8, 2, 'subtract')
+// const expectedSubtract = 6
+// const subtractAnswer = actualSubtract === expectedSubtract
+// console.log(`Subtracting two numbers resulted in ${expectedSubtract}: ${subtractAnswer}`)
+// console.log('------------------------------------------------------------------------------')
+
+// const actualMultiply = calculateTwoNumbers(8, 2, 'multiply')
+// const expectedMultiply = 16
+// const multiplyAnswer = actualMultiply === expectedMultiply
+// console.log(`Multiplying two numbers resulted in ${expectedMultiply}: ${multiplyAnswer}`)
+// console.log('------------------------------------------------------------------------------')
+
+// const actualDivide = calculateTwoNumbers(8, 2, 'divide')
+// const expectedDivide = 4
+// const divideAnswer = actualDivide === expectedDivide
+// console.log(`Dividing two numbers resulted in ${expectedDivide}: ${divideAnswer}`)
+// console.log('------------------------------------------------------------------------------')
+
+// const actualBadMethod = calculateTwoNumbers(8, 2, 'randomMethod')
+// const expectedBadMethod = 'Please enter a proper calculation method'
+// const badMethodAnswer = actualBadMethod === expectedBadMethod
+// console.log(`Entering in bad method resulted in the response ${expectedBadMethod}: ${badMethodAnswer}`)
+// console.log('------------------------------------------------------------------------------')
+
+
+// const testValue = 'LeWIs'
+// console.log(testValue.toLowerCase())
+// console.log(testValue.toLowerCase() === 'lewis')
