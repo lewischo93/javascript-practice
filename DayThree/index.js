@@ -56,3 +56,17 @@ const objectOne = {
   valueFour: 'false'
 
 }
+
+// Simon's code below...
+const strVar = 'Hello world!'
+const numVar = 123456
+const boolVar = false
+const nullVar = null
+const undefinedVar = undefined
+const varArr = [23, 'hello', undefine, null]
+const objOne = {
+  make: 'Honda',
+  model: 'Civic',
+  year: 2020,
+  isManual: false
+}

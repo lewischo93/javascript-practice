@@ -13,3 +13,13 @@ function twoVariables (numberOne, numberTwo){
     }
     }
     
+// Simon's code below...
+function getOddOrEven (valOne, valTwo) {
+    const sum = valOne + valTwo;
+    const isEven = sum % 2 === 0
+    if (isEven) {
+        return 'EVEN SUM'
+    } else {
+        return 'ODD SUM'
+    }
+}
