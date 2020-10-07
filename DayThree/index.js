@@ -42,3 +42,17 @@ console.log('-------------------------------------------------------------------
 // 5. Create an undefined variable with the value, undefined
 // 6. Create an array variable with the values: 23, 'hello', undefined, null
 // 7. Create an object variable with the key/value pairs of make/Honda, model/Civic, year/2020, isManual/false
+
+const stringVariable = 'Hello world!'
+const numberVariable = 123456
+const booleanVariable = false
+const nullVariable = null
+const undefinedVariable = undefined
+const variableArray = [23, 'hello', undefined, null]
+const objectOne = {
+  valueOne: 'Honda',
+  valueTwo: 'Civic',
+  valueThree: '2020',
+  valueFour: 'false'
+
+}
