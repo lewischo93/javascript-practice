@@ -6,13 +6,16 @@
 
 function twoVariables (numberOne, numberTwo){
     const sum = numberOne+numberTwo
-    if (sum = evenNumber) {
-    return 'EVEN SUM'
-    } else if (sum = oddNumber) {
+    const result = sum % 2
+    const isOdd = result === 1
+    if (isOdd) {
         return 'ODD SUM'
+    } else {
+        return 'EVEN SUM'
     }
-    }
-    
+}
+console.log(twoVariables(4, 3))
+
 // Simon's code below...
 function getOddOrEven (valOne, valTwo) {
     const sum = valOne + valTwo;

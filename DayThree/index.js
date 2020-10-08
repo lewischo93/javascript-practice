@@ -50,10 +50,10 @@ const nullVariable = null
 const undefinedVariable = undefined
 const variableArray = [23, 'hello', undefined, null]
 const objectOne = {
-  valueOne: 'Honda',
-  valueTwo: 'Civic',
-  valueThree: '2020',
-  valueFour: 'false'
+  make: 'Honda',
+  model: 'Civic',
+  year: 2020,
+  isManual: false
 
 }
 
@@ -63,7 +63,7 @@ const numVar = 123456
 const boolVar = false
 const nullVar = null
 const undefinedVar = undefined
-const varArr = [23, 'hello', undefine, null]
+const varArr = [23, 'hello', undefined, null]
 const objOne = {
   make: 'Honda',
   model: 'Civic',
