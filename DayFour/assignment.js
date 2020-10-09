@@ -3,9 +3,10 @@ function addTwo(numOne, numTwo) {
   const sum = numOne+numTwo
     return sum
 }
-  // Code here
+
+let result = addTwo(3, 5) === 8
 console.log('----------------------------------------------------------------')
-console.log('Question 1 passed? ' + addTwo(3, 5) === 8)
+console.log('Question 1 passed? ' + result)
 
 
 // 2. Write a function that processes two numbers and does the below:
@@ -16,15 +17,17 @@ function processTwo(valOne, valTwo, process) {
   if (process === 'add'){
       return valOne+valTwo 
   } else if (process ==='subtract') {
-      return valOne=valueTwo
+      // return valOne=valueTwo
+      return valOne
   } else {
       return 'BAD PROCESS'
   }
   // Code here
 }
 
+result = processTwo(1, 3, "add") === 4 && processTwo(5, 2, "subtract") === 3 && processTwo(5, 0, "asdf") === "Bad process"
 console.log('----------------------------------------------------------------')
-console.log('Question 2 passed? ' + processTwo(1, 3, "add") === 4 && processTwo(5, 2, "subtract") === 3 && processTwo(5, 0, "asdf") ==="Bad process")
+console.log('Question 2 passed? ' + result)
 console.log('----------------------------------------------------------------')
 
 // 3. Write a function that takes one number parameter.
@@ -44,8 +47,9 @@ function isBigNumber(num) {
   // Code here
 }
 
+result = isBigNumber(55) === 'BIG NUMBER!' && isBigNumber(50) === 50 && isBigNumber(23) === 'Small number...'
 console.log('----------------------------------------------------------------')
-console.log('Question 3 passed?' + isBigNumber(55) === 'Big number!' && isBigNumber(50) === 50 && isBigNumber(23) === 'Small number...');
+console.log('Question 3 passed?' + result);
 console.log('----------------------------------------------------------------')
 
 // 4. Create an array that has the following (in order!):
@@ -57,8 +61,9 @@ console.log('----------------------------------------------------------------')
 // Code below...
 const yourArray = [40, 'Canucks', undefined, null, true]
 
+result = typeof yourArray[0] === 'number' && typeof yourArray[1] === 'string' && typeof yourArray[2] === 'undefined' && yourArray[3] === null && typeof yourArray[4] === 'boolean'
 console.log('----------------------------------------------------------------')
-console.log('Question 4 passed?' + typeof yourArray[0] === 'number' && typeof yourArray[1] === 'string' && typeof yourArray[2] === 'undefined' && typeof yourArray[3] === 'null' && typeof yourArray[4] === 'boolean');
+console.log('Question 4 passed?' + result);
 console.log('----------------------------------------------------------------')
 
 // 5. Create a function that takes one parameter.
@@ -68,9 +73,9 @@ function getFirstElement() {
   
 
 }
-
+result = getFirstElement(['test', 'wow', 'hi']) === 'test'
 console.log('----------------------------------------------------------------')
-console.log('Question 5 passed?' + getFirstElement(['test', 'wow', 'hi']) === 'test')
+console.log('Question 5 passed?' + result)
 console.log('----------------------------------------------------------------')
 
 // 6. Create a function that takes one parameter.
@@ -84,6 +89,7 @@ function getLastElement() {
 
 }
 
+result = getFirstElement(['test', 'wow', 'lol', 'goodbye', 'wooo', 'testing!!', 'hi']) === 'hi'
 console.log('----------------------------------------------------------------')
-console.log('Question 5 passed?' + getFirstElement(['test', 'wow', 'lol', 'goodbye', 'wooo', 'testing!!', 'hi']) === 'hi')
+console.log('Question 5 passed?' + result)
 console.log('----------------------------------------------------------------')
