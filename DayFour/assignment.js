@@ -61,6 +61,7 @@ console.log('----------------------------------------------------------------')
 // Code below...
 const yourArray = [40, 'Canucks', undefined, null, true]
 
+
 result = typeof yourArray[0] === 'number' && typeof yourArray[1] === 'string' && typeof yourArray[2] === 'undefined' && yourArray[3] === null && typeof yourArray[4] === 'boolean'
 console.log('----------------------------------------------------------------')
 console.log('Question 4 passed?' + result);
@@ -69,10 +70,13 @@ console.log('----------------------------------------------------------------')
 // 5. Create a function that takes one parameter.
 // The parameter variable type is an array
 // Have the function return the FIRST element of the parameter
-function getFirstElement() {
-  
-
+function getFirstElement(writingHere) {
+  const writingHere = ['Pettersson', 'Makar', 'Hughes'];
+  const firstItem = writingHere[0];
 }
+
+
+console.log(firstItem);
 result = getFirstElement(['test', 'wow', 'hi']) === 'test'
 console.log('----------------------------------------------------------------')
 console.log('Question 5 passed?' + result)
@@ -83,7 +87,8 @@ console.log('----------------------------------------------------------------')
 // Have the function return the LAST element of the parameter.
 // Tip: If the parameter is const arr = ['hello', 'goodbye', 'whatsup'], you can't just go arr[2].
 // What if the array parameter hs 15 elements? 50? 1000?
-function getLastElement() {
+function getLastElement(['lol', 'testing', 'hello', 47]) {
+  const 
 
 
 
