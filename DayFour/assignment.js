@@ -17,12 +17,11 @@ function processTwo(valOne, valTwo, process) {
   if (process === 'add'){
       return valOne+valTwo 
   } else if (process ==='subtract') {
-      // return valOne=valueTwo
-      return valOne
+      return valOne-valTwo
   } else {
       return 'BAD PROCESS'
   }
-  // Code here
+
 }
 
 result = processTwo(1, 3, "add") === 4 && processTwo(5, 2, "subtract") === 3 && processTwo(5, 0, "asdf") === "Bad process"
@@ -38,12 +37,12 @@ function isBigNumber(num) {
     let numberToUpdate = num
       if (num > 50) {
         numberToUpdate = 'BIG NUMBER!'
-      } else if (num = 50) {
+      } else if (num === 50) {
         numberToUpdate = num 
       } else {
         numberToUpdate = 'Small number...'
       }
-      return num
+      return numberToUpdate
   // Code here
 }
 
@@ -71,12 +70,17 @@ console.log('----------------------------------------------------------------')
 // The parameter variable type is an array
 // Have the function return the FIRST element of the parameter
 function getFirstElement(writingHere) {
-  const writingHere = ['Pettersson', 'Makar', 'Hughes'];
-  const firstItem = writingHere[0];
+ const firstItem = writingHere[0];
+ return firstItem
 }
+// or 
+// function getFirstElement(writingHere) {
+  // return writingHere[0];
+// }
 
 
-console.log(firstItem);
+
+
 result = getFirstElement(['test', 'wow', 'hi']) === 'test'
 console.log('----------------------------------------------------------------')
 console.log('Question 5 passed?' + result)
@@ -87,11 +91,22 @@ console.log('----------------------------------------------------------------')
 // Have the function return the LAST element of the parameter.
 // Tip: If the parameter is const arr = ['hello', 'goodbye', 'whatsup'], you can't just go arr[2].
 // What if the array parameter hs 15 elements? 50? 1000?
-function getLastElement(['lol', 'testing', 'hello', 47]) {
-  const 
+function getLastElement(arr) { // ['elias', 'eterson', 'canucks', 'oiler']
+  const length = arr.length // 4
+  const lastItem = arr[length-1]; // 'oiler'
+  return lastItem  
+  
+}
 
+function getLastElementLessLines (arr) {
+  return arr[arr.length - 1]
+}
 
-
+function getLastElementManyLines (arr) {
+  const length = arr.length
+  const lastElementOfArray = length - 1
+  const lastItem = arr[lastElementOfArray] // arr[5] arr[3] arr[0] arr[99]
+  return lastItem
 }
 
 result = getFirstElement(['test', 'wow', 'lol', 'goodbye', 'wooo', 'testing!!', 'hi']) === 'hi'
