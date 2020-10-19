@@ -32,7 +32,7 @@ function getSumOfBothLastElements(arrOne, arrTwo) {
 
 }
 // no need to define arrOne or arrTwo. It overrides everything else. Think bazooka metaphor.
-
+// getSumofBothLastElements([1,2 3], [4, 5, 6])
 
 // Review...create a function that takes one parameter
 // If bigger than 20, return "BIG NUMBER!"
