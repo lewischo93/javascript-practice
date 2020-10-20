@@ -13,6 +13,7 @@ function getSecondToLastItem(arr) {
   return secondLastItem
 
 }
+getSecondToLastItem([2, 3, 4])
 
 // Lewis note: I think I got it. Tried it in console and it seemed to work. Seems way too lengthy or is it okay?
 // Return sum of the last element of both arrays passed in

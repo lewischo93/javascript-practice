@@ -32,15 +32,50 @@ console.log(`Is ${lewisObject.name} a student? ${lewisStudentStatus}`);
 // If age is equal to 27, return "The right age to learn web dev!"
 // If age is less than 27, return "Still learning..."
 
-function lewisAge(age) {
-  if (age > 27) {
-    return 'Getting Older!'
-  } else if (age === 27){
-    return 'The right age to learn web dev!'
+// make objects before making a function that takes an object. Otherwise it gets overridden or overrides. 
+const lcObject = {
+  age: 5,
+  colour: 'green'
+}
+
+const helloObject = {
+  age: 324,
+  colour: 'yellow'
+}
+
+const anythingHere = {
+  age: 47,
+  colour: 'red'
+}
+
+function getAgeFromObject(obj) {
+  const age = obj.age;
+  if (obj.age > 27) {
+    return 'Getting older!'
+  } else if (obj.age === 27) {
+    return 'The right to learn web dev!'
   } else {
     return 'Still learning...'
   }
 }
-console.log(lewisAge(29))
-console.log(lewisAge(19))
-console.log(lewisAge(27))
+
+function getColourFromObject(obj) {
+  const colour = obj.colour;
+  if (colour === 'green') {
+    return 'alive'
+  } else if (colour === 'yellow') {
+    return 'wounded'
+  } else {
+    return 'dead'
+  }
+}
+
+
+console.log(getAgeFromObject(lewisObject))
+console.log(getAgeFromObject(lcObject))
+console.log(getAgeFromObject(helloObject))
+console.log('---------------------------------------------------------------------------------------------------------')
+
+console.log(getColourFromObject(lcObject))
+console.log(getColourFromObject(helloObject))
+console.log(getColourFromObject(anythingHere))

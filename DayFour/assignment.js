@@ -113,3 +113,4 @@ result = getFirstElement(['test', 'wow', 'lol', 'goodbye', 'wooo', 'testing!!', 
 console.log('----------------------------------------------------------------')
 console.log('Question 5 passed?' + result)
 console.log('----------------------------------------------------------------')
+

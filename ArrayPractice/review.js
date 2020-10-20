@@ -6,7 +6,7 @@
 // If third parameter is 'multiply', multiply the first element from first array with last element from second array.
 // If third parameter is 'divide', divide the last element of first array with first element of second array.
 function review (firstArray, secondArray, process) {
-    const lengthFirstArray = firstArray.length
+    const lengthFirstArray = firstArray.length                          // It is important to add these variables right away so all the if/else statements have access to them
     const lastItemFirstArray = firstArray[lengthFirstArray-1];
     const lengthSecondArray = secondArray.length
     const lastItemSecondArray = secondArray[lengthSecondArray-1];
