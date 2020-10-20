@@ -31,3 +31,16 @@ console.log(`Is ${lewisObject.name} a student? ${lewisStudentStatus}`);
 // If age is greater than 27, return "Getting older!"
 // If age is equal to 27, return "The right age to learn web dev!"
 // If age is less than 27, return "Still learning..."
+
+function lewisAge(age) {
+  if (age > 27) {
+    return 'Getting Older!'
+  } else if (age === 27){
+    return 'The right age to learn web dev!'
+  } else {
+    return 'Still learning...'
+  }
+}
+console.log(lewisAge(29))
+console.log(lewisAge(19))
+console.log(lewisAge(27))
