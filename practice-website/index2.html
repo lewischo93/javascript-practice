@@ -1,72 +1,91 @@
 <!DOCTYPE html>
 <html>
-    <style>
-        .topHeader {
-            border: 5px outset grey;
-            background-color: darkgreen;
-            text-align: center;
-            font: 30;
-        }
-        .myDiv {
-            border: 10px outset white;
-            background-color: darkblue;
-            text-align: center;
-           
-        }
-        .container {
-            justify-content: center;
-            text-align: center;
-           list-style: inside;
-           align-items: center;
-        }
-    
-    </style>
-    <body>
-        <div class="topHeader">
-        <h1> This is the First Heading. There are many like it.</h1>
-        </div>
-        <p> Hello my name is Lewis and I am learning to program and code and stuff so I don't spend the rest of my life doing useless hourly jobs. This is the first step.</p>
-        <p>This small project is about the <span style="color:blue">Vancouver Canucks</span>, a team I am a big fan of and am utterly disappointed after every season. Until we win the Stanley Cup, sadness occurs.</p>
+	<head>
+		<style>
+			.topHeader {
+				border: 5px outset grey;
+				background-color: darkgreen;
+				text-align: center;
+				font: 30;
+			}
+			.myDiv {
+				border: 10px outset white;
+				background-color: darkblue;
+				text-align: center;
+			}
+			.container {
+				justify-content: center;
+				text-align: center;
+				list-style: inside;
+				align-items: center;
+			}
+		</style>
+		<script>
+			const PASSWORD = 'learning_2020'
+			function interactions () {
+				// write code here
+			}
+			function promptPassword() {
+				const userAnswer = prompt("Enter in password")
+				if (userAnswer === PASSWORD) {
+					interactions()
+				} else {
+					promptPassword()
+				}
+			}
+			document.addEventListener('DOMContentLoaded', promptPassword)
+		</script>
+	</head>
+	<body>
+		<div class="topHeader">
+			<h1> This is the First Heading. There are many like it.</h1>
+		</div>
+		<p> Hello my name is Lewis and I am learning to program and code and stuff so I don't spend the rest of my life doing useless hourly jobs. This is the first step.</p>
+		<p>This small project is about the <span style="color:blue">Vancouver Canucks</span>, a team I am a big fan of and am utterly disappointed after every season. Until we win the Stanley Cup, sadness occurs.</p>
 
-        <div class="myDiv">
-        <h2 style="color:white"> Important Canucks Facts</h2>
-        <hr>
-        </div>
-        <p> The Vancouver Canucks made the playoffs for the first time since 2015. Young and relatively inexperienced, they were able to dispatch two very good teams before being eventually ousted in seven games to the <span style="color: gold">Vegas Golden Knights</span>.
-            <br /> They dispatched the <span style="color:darkgreen"> Minnesota Wild</span> in four games (best 3 out of 5) in the qualifying round with Chris Tanev scoring the OT goal in Game 4.
-            <br /> The <span style="color: blue">St.Louis Blues</span> were ousted in six games in round 1 with gigantic performances by Bo Horvat and Tyler Motte. You don't see that everyday!
-        </p>
-        <a href="https://russianmachineneverbreaks.com/2020/10/15/braden-holtby-to-wear-number-49-for-vancouver-canucks/" target="_self">Braden Holtby signs with the Canucks and will wear number 49.</a>
-        <br />
-        <a href="https://www.nhl.com/news/golden-knights-trade-nate-schmidt-to-canucks/c-319441516" target="_top">Nate Schmidt traded to VAN! GASP!!</a>
-        <hr>
-        
-        <p> They will be playing with some of the following players: </p>
-         <div class="container"> <ol>
-                <li> <span style="color:darkorchid">Elias Pettersson</span></li>
-                <li> Quinn Hughes </li>
-                <li> JT Miller</li>
-                <li> Thatcher Demko</li>
-                <li> Brock Boeser</li>
-                <li> Bo Horvat (C) </li>
-                <li> Alexander Edler</li>
-            </ol>
-        </div>
-            <hr>
-            <dl>
-                <dt> <b>Quinn Hughes</b></dt>
-                <dd> mobile, young, fast, puck moving defenseman</dd>
-                <dt> <b>Elias Pettersson</b></dt>
-                <dd> Young, quick forward with a wicked slapshot and wristshot. Much wow. </dd>
-                <dt> <b>Thatcher Demko</b></dt>
-                <dd> Rising young goaltender who saved 122 shots out of 124 in the last three games againstr VGK in the 2020 Stanley Cup Playoffs</dd>
-                <dt> <b>JT Miller</b></dt>
-                <dd> Traded from TBL in 2019, strong leader who also led the Canucks in points this season. Eclipsed his previous point and goal records from last season.</dd>
-            </dl>
-            <img src="https://www.vmcdn.ca/f/files/via/bulis.pettersson.canes.2019.7374.JPG" style="width:400px;height:300px;">
-                <a href="https://www.thestar.com/sports/hockey/opinion/2020/02/28/for-quinn-hughes-and-the-nhls-next-wave-on-defence-size-no-longer-matters.html" target="_blank">
-            <img src="https://www.thestar.com/content/dam/thestar/sports/hockey/opinion/2020/02/28/for-quinn-hughes-and-the-nhls-next-wave-on-defence-size-no-longer-matters/hughes.jpg"
-            style="width:400px;height:300px;">
-                </a>
-    </body>
+		<div class="myDiv">
+			<h2 style="color:white"> Important Canucks Facts</h2>
+			<hr>
+		</div>
+		<p>
+			The Vancouver Canucks made the playoffs for the first time since 2015. Young and relatively inexperienced, they were able to dispatch two very good teams before being eventually ousted in seven games to the <span style="color: gold">Vegas Golden Knights</span>.
+			<br />
+			They dispatched the <span style="color:darkgreen"> Minnesota Wild</span> in four games (best 3 out of 5) in the qualifying round with Chris Tanev scoring the OT goal in Game 4.
+			<br /> The <span style="color: blue">St.Louis Blues</span> were ousted in six games in round 1 with gigantic performances by Bo Horvat and Tyler Motte. You don't see that everyday!
+		</p>
+		<a href="https://russianmachineneverbreaks.com/2020/10/15/braden-holtby-to-wear-number-49-for-vancouver-canucks/" target="_self">Braden Holtby signs with the Canucks and will wear number 49.</a>
+		<br />
+		<a href="https://www.nhl.com/news/golden-knights-trade-nate-schmidt-to-canucks/c-319441516" target="_top">Nate Schmidt traded to VAN! GASP!!</a>
+		<hr>
+		<p> They will be playing with some of the following players: </p>
+		<div class="container">
+			<ol>
+				<li> <span style="color:darkorchid">Elias Pettersson</span></li>
+				<li> Quinn Hughes </li>
+				<li> JT Miller</li>
+				<li> Thatcher Demko</li>
+				<li> Brock Boeser</li>
+				<li> Bo Horvat (C) </li>
+				<li> Alexander Edler</li>
+			</ol>
+		</div>
+			<hr>
+			<dl>
+					<dt> <b>Quinn Hughes</b></dt>
+					<dd> mobile, young, fast, puck moving defenseman</dd>
+					<dt> <b>Elias Pettersson</b></dt>
+					<dd> Young, quick forward with a wicked slapshot and wristshot. Much wow. </dd>
+					<dt> <b>Thatcher Demko</b></dt>
+					<dd> Rising young goaltender who saved 122 shots out of 124 in the last three games againstr VGK in the 2020 Stanley Cup Playoffs</dd>
+					<dt> <b>JT Miller</b></dt>
+					<dd> Traded from TBL in 2019, strong leader who also led the Canucks in points this season. Eclipsed his previous point and goal records from last season.</dd>
+			</dl>
+			<img src="https://www.vmcdn.ca/f/files/via/bulis.pettersson.canes.2019.7374.JPG" style="width:400px;height:300px;">
+			<a href="https://www.thestar.com/sports/hockey/opinion/2020/02/28/for-quinn-hughes-and-the-nhls-next-wave-on-defence-size-no-longer-matters.html" target="_blank">
+				<img
+					src="https://www.thestar.com/content/dam/thestar/sports/hockey/opinion/2020/02/28/for-quinn-hughes-and-the-nhls-next-wave-on-defence-size-no-longer-matters/hughes.jpg"
+					style="width:400px;height:300px;"
+				>
+			</a>
+	</body>
 </html>
